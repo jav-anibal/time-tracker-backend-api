@@ -139,3 +139,5 @@ POSTGRES_PASSWORD=admin_docker
 Registro de hitos alcanzados, en orden. Se agrega una entrada por hito completado; las anteriores no se reescriben.
 
 - **2026-09-23** — Bootstrap: proyecto Spring Boot 4.1.1 sobre Java 21, PostgreSQL vía Docker Compose, estructura de paquetes por capas (`controller`, `service`, `repository`, `model`, `dto`, `exception`, `config`).
+
+- **2026-09-23** — Modelo de datos: entidades `User`, `Role`, `TimeEntry` y `Workday` con JPA; enums `RoleName` y `TimeEntryType` en paquete `enums`; repositorios Spring Data (`RoleRepository`, `UserRepository`, `TimeEntryRepository`, `WorkdayRepository`). Hibernate crea cinco tablas: `users`, `roles`, `user_roles`, `time_entries`, `workdays`.
