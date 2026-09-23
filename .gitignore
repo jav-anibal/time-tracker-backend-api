@@ -55,8 +55,10 @@ Thumbs.db
 # Logs
 *.log
 logs/
+*_docs/
 
 # Artefactos compilados
 *.class
 *.jar
 *.war
+env.ps1

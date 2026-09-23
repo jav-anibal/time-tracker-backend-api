@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: timertracker
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+server:
+  port: 8080
